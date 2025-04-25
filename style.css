@@ -1,0 +1,180 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background: #1e1e2f;
+    color: #f1f1f1;
+  }
+  
+  header {
+    background: #2c3e50;
+    padding: 1rem 2rem;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00b894;
+  }
+  
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: linear-gradient(to right, #00b894, #55efc4);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    transition: background 0.3s;
+  }
+  
+  body.dark-mode #hero {
+    background: linear-gradient(to right, #0a3d62, #1e3799);
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  #about, #projects, #contact {
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  body.dark-mode #about,
+  body.dark-mode #projects,
+  body.dark-mode #contact {
+    background: #2f2f3f;
+  }
+  
+  .project {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #ecf0f1;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  body.dark-mode .project {
+    background: #3c3c4f;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode input,
+  body.dark-mode textarea {
+    background: #444;
+    color: #f1f1f1;
+    border: 1px solid #666;
+  }
+  
+  button {
+    padding: 0.75rem;
+    background: #00b894;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #019875;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  body.dark-mode footer {
+    background: #1e1e2f;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }  
+  
